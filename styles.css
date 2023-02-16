@@ -1,5 +1,5 @@
 /* BEGIN SETUP (you will not need to use these) */
-#intro {
+#intro {                /*id selector*/
   color: rgb(0, 0, 0);
   text-align: center;
   margin: 50px;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-h2 {
+h2 {                  /*This selects all of the elements with the h2 tag and styles them as such.*/
   font-size: medium;
   font-weight: 200;
 }
@@ -20,7 +20,7 @@ h2 {
 /* Classes that you might find useful */
 /* You may also have to implement your own classes */
 
-.flag {
+.flag {       /*Class selector, selects elements by classes.*/
   height: 300px;
   width: 500px;
   border-style: solid;
@@ -31,11 +31,23 @@ h2 {
   height: 50%;
 }
 
-.threevert {
+.threevert{
+  height: 33.3%
+}
+
+#white{
+  background-color: white;
 }
 
 .threehoriz {
   width: 33.3%;
+  height: 100%;
+  
+}
+
+.mxhoriz{
+  width: 23.3%;
+  height: 100%;
 }
 
 .narrow {
@@ -59,6 +71,10 @@ h2 {
 
 /* QUESTION 1 */
 
+.red{
+  background-color: red;
+}
+
 .orange {
   background-color: orange;
 }
@@ -73,10 +89,12 @@ h2 {
 
 .blue {
   background-color: blue;
+  
 }
 
-.lightblue {
+.light-blue{
   background-color: lightblue;
+  
 }
 
 .purple {
@@ -93,21 +111,23 @@ h2 {
 
 /* BEGIN QUESTION 2 */
 
-.thailand-red {
-  /* TODO */
+.thailand-red{
+  background-color: #b5002d;
 }
 
-.thailand-white {
-  /* TODO */
+.thailand-white{
+  background-color: white;
 }
 
 .thailand-blue {
-  /* TODO */
+  background-color: #2e2a4c;
 }
 
 /* END QUESTION 2 */
 
 /* BEGIN QUESTION 3 */
+
+
 
 .romania-blue {
   background-color: #002c84;
@@ -121,6 +141,8 @@ h2 {
   background-color: #e10017;
 }
 
+
+
 /* END QUESTION 3 */
 
 /* QUESTION 4 */
@@ -130,10 +152,41 @@ h2 {
 
 .mexico-img {
   /* TODO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  
+  /*max-height: 50%;
+  max-width: 50%;*/
+}
+
+.eagle{
+  justify-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  
+  
+  
 }
 
 .mexico-red {
   background-color: #ce1126;
+}
+
+.ver{
+  display:flex;
+  flex-direction: row;
+}
+
+.label{
+  color:lightsteelblue;
+}
+
+.hoverable:hover {
+  font-size: 1.5rem;
+  color: #ff7f50;
 }
 
 /* QUESTION 6 */
@@ -150,11 +203,13 @@ h2 {
 .flag1 {
   background-color: red;
   /* TODO */
+  margin:5px;
 }
 
 .flag2 {
   background-color: blue;
   /* TODO */
+  margin:5px;
 }
 /* For padding practice */
 .padding-container {
@@ -162,4 +217,8 @@ h2 {
   background-color: lightblue;
   background-clip: content-box, padding-box;
   /* TODO */
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
