@@ -1,1 +1,1 @@
-https://github.com/fullstack-decal-sp23/hw2-Yeek2
+https://fullstack-decal-sp23.github.io/hw2-Yeek2/
